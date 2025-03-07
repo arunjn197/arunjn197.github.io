@@ -1,10 +1,297 @@
 <!DOCTYPE html>
-<html>
-<title>HTML Tutorial</title>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Salesforce Tech Lead Portfolio</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      color: #0066cc;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Navbar Styles */
+    nav {
+      background-color: #333;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: #fff;
+      padding: 10px 20px;
+      margin: 0 15px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      background-color: #0066cc;
+      border-radius: 5px;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+      background: url('https://via.placeholder.com/1500') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+
+    .cta-btn {
+      background-color: #0066cc;
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #004d99;
+    }
+
+    /* About Section */
+    .about {
+      background-color: #fff;
+      padding: 50px 0;
+    }
+
+    .about h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Skills Section */
+    .skills {
+      padding: 50px 0;
+      background-color: #f9f9f9;
+    }
+
+    .skills h2 {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      gap: 30px;
+      text-align: center;
+    }
+
+    .skill {
+      width: 180px;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .skill:hover {
+      transform: translateY(-10px);
+    }
+
+    .skill img {
+      max-width: 50px;
+      margin-bottom: 20px;
+    }
+
+    /* Contact Section */
+    .contact {
+      background-color: #0066cc;
+      color: white;
+      padding: 50px 0;
+    }
+
+    .contact h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact p {
+      font-size: 1.1rem;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .contact-btn {
+      display: inline-block;
+      background-color: #fff;
+      color: #0066cc;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      margin-top: 30px;
+      text-align: center;
+      border-radius: 5px;
+      border: 2px solid #fff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .contact-btn:hover {
+      background-color: #004d99;
+      color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Media Queries for responsiveness */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+
+      .skills-list {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
 <body>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+  <!-- Navbar -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Salesforce Tech Lead</h1>
+    <p>Leading Salesforce Projects with Passion and Precision</p>
+    <button class="cta-btn">Get In Touch</button>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello, I'm a Salesforce Tech Lead with over 7 years of experience in delivering scalable solutions. I specialize in designing, developing, and deploying Salesforce applications that drive business growth. My background includes strong leadership skills, hands-on technical expertise, and the ability to manage and mentor high-performing teams.</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <div class="skill">
+          <img src="https://via.placeholder.com/50" alt="Salesforce">
+          <h3>Salesforce</h3>
+        </div>
+        <div class="skill">
+          <img src="https://via.placeholder.com/50" alt="Apex">
+          <h3>Apex</h3>
+        </div>
+        <div class="skill">
+          <img src="https://via.placeholder.com/50" alt="Visualforce">
+          <h3>Visualforce</h3>
+        </div>
+        <div class="skill">
+          <img src="https://via.placeholder.com/50" alt="Lightning">
+          <h3>Lightning</h3>
+        </div>
+        <div class="skill">
+          <img src="https://via.placeholder.com/50" alt="Integration">
+          <h3>Integration</h3>
+        </div>
+        <div class="skill">
+          <img src="https://via.placeholder.com/50" alt="Sales Cloud">
+          <h3>Sales Cloud</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you're looking for a Salesforce Tech Lead for your next project or just want to connect, feel free to reach out!</p>
+      <a href="mailto:your.email@example.com" class="contact-btn">Email Me</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Salesforce Tech Lead | <a href="#">Privacy Policy</a></p>
+  </footer>
 
 </body>
+
 </html>
